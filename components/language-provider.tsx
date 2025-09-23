@@ -103,7 +103,7 @@ const translations = {
     "nav.contact": "التواصل",
 
     // Hero Section
-    "hero.name": "جمال ربياعي",
+    "hero.name": "جمال ربيعي",
     "hero.tagline": "طالب ماجستير علوم الحاسوب | مطور ويب وتطبيقات | متخصص في الأمن السيبراني والذكاء الاصطناعي",
     "hero.downloadCV": "تحميل السيرة الذاتية",
     "hero.contactMe": "تواصل معي",
@@ -168,7 +168,7 @@ const translations = {
 
     // Footer
     "footer.built": "تم البناء باستخدام Next.js و Tailwind CSS",
-    "footer.rights": "© 2025 جمال ربياعي – جميع الحقوق محفوظة",
+    "footer.rights": "© 2025 جمال ربيعي – جميع الحقوق محفوظة",
   },
   fr: {
     // Navigation
