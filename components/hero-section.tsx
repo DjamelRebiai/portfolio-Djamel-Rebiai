@@ -62,9 +62,12 @@ export function HeroSection() {
             <Button
               size="lg"
               className="w-full sm:w-auto px-8 py-4 text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              asChild
             >
-              <Download className="mr-3 h-5 w-5" />
-              {t("hero.downloadCV")}
+              <a href="/Djamel-Rebiai-CV.pdf" download>
+                <Download className="mr-3 h-5 w-5" />
+                {t("hero.downloadCV")}
+              </a>
             </Button>
             <Button
               variant="outline"
