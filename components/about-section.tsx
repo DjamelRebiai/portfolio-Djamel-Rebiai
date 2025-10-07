@@ -11,23 +11,23 @@ export function AboutSection() {
   const expertiseAreas = [
     {
       icon: Code,
-      title: "Web Development",
-      description: "Full-stack development with modern frameworks",
+      title: t("about.webTitle"),
+      description: t("about.webDesc"),
     },
     {
       icon: Smartphone,
-      title: "Mobile Development",
-      description: "Cross-platform mobile applications",
+      title: t("about.mobileTitle"),
+      description: t("about.mobileDesc"),
     },
     {
       icon: Shield,
-      title: "Cybersecurity",
-      description: "Security-focused development practices",
+      title: t("about.cyberTitle"),
+      description: t("about.cyberDesc"),
     },
     {
       icon: Brain,
-      title: "AI Automation",
-      description: "Intelligent agent systems and automation",
+      title: t("about.aiTitle"),
+      description: t("about.aiDesc"),
     },
   ]
 
@@ -40,7 +40,7 @@ export function AboutSection() {
               {t("about.title")}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Passionate about creating innovative solutions and exploring cutting-edge technologies
+              {t("about.passion")}
             </p>
           </div>
 
@@ -55,19 +55,19 @@ export function AboutSection() {
                   <div className="space-y-4">
                     <div className="flex items-center space-x-4 p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
                       <div className="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-foreground font-medium">Master's Student in Computer Science</span>
+                      <span className="text-foreground font-medium">{t("about.masterStudent")}</span>
                     </div>
                     <div className="flex items-center space-x-4 p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
                       <div className="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-foreground font-medium">Web & Mobile Development Expert</span>
+                      <span className="text-foreground font-medium">{t("about.webExpert")}</span>
                     </div>
                     <div className="flex items-center space-x-4 p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
                       <div className="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-foreground font-medium">Cybersecurity Enthusiast</span>
+                      <span className="text-foreground font-medium">{t("about.cyberExpert")}</span>
                     </div>
                     <div className="flex items-center space-x-4 p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
                       <div className="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-foreground font-medium">AI Agent Automation Specialist</span>
+                      <span className="text-foreground font-medium">{t("about.aiExpert")}</span>
                     </div>
                   </div>
                 </div>

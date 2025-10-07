@@ -15,7 +15,7 @@ export function LanguagesSection() {
       percentage: 100,
     },
     {
-      name: "Kabyle",
+      name: "Kabyle ⵣ",
       flag: "🏔️",
       level: t("languages.native"),
       percentage: 100,
@@ -24,25 +24,25 @@ export function LanguagesSection() {
       name: "French",
       flag: "🇫🇷",
       level: t("languages.advanced"),
-      percentage: 85,
+      percentage: 70,
     },
     {
       name: "English",
       flag: "🇺🇸",
       level: t("languages.intermediate"),
-      percentage: 70,
+      percentage: 50,
     },
     {
       name: "German",
       flag: "🇩🇪",
       level: t("languages.intermediate"),
-      percentage: 60,
+      percentage: 40,
     },
     {
       name: "Russian",
       flag: "🇷🇺",
       level: t("languages.basic"),
-      percentage: 35,
+      percentage: 30,
     },
   ]
 

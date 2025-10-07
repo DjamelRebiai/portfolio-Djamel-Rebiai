@@ -12,62 +12,98 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: "Hajj & Umrah Web Platform",
-      description:
-        "Comprehensive web platform for managing Hajj and Umrah services with booking system, user management, and payment integration.",
+      title: t("projects.hajjTitle"),
+      description: t("projects.hajjDesc"),
       image: "/modern-web-platform-interface-for-travel-booking-w.png",
-      technologies: ["HTML", "CSS", "JavaScript", "Node.js", "SQL"],
-      features: ["User Authentication", "Booking System", "Payment Gateway", "Admin Dashboard"],
+      technologies: t("projects.hajjTechStack").split(/,|،/),
+      techLabel: t("projects.hajjTech"),
+      featuresLabel: t("projects.hajjFeatures"),
+      features: [
+        t("projects.hajjFeature1"),
+        t("projects.hajjFeature2"),
+        t("projects.hajjFeature3"),
+        t("projects.hajjFeature4")
+      ],
       github: null, // Private repository
       live: "https://www.almanassikalarabi.com",
     },
     {
-      title: "Lexical Analyzer in C",
-      description:
-        "A comprehensive lexical analyzer built in C for parsing and tokenizing source code, supporting multiple programming languages.",
+      title: t("projects.lexicalTitle"),
+      description: t("projects.lexicalDesc"),
       image: "/lexical-analyzer-c-programming-tokenization.jpg",
-      technologies: ["C"],
-      features: ["Multi-language Support", "Token Recognition", "Error Handling", "Symbol Table"],
+      technologies: t("projects.lexicalTechStack").split(/,|،/),
+      techLabel: t("projects.lexicalTech"),
+      featuresLabel: t("projects.lexicalFeatures"),
+      features: [
+        t("projects.lexicalFeature1"),
+        t("projects.lexicalFeature2"),
+        t("projects.lexicalFeature3"),
+        t("projects.lexicalFeature4")
+      ],
       github: "https://github.com/DjamelRebiai/programatoin---C--.git",
       live: null,
     },
     {
-      title: "Camping Platform",
-      description:
-        "Web platform for camping site reservations with interactive maps, booking management, and user reviews.",
+      title: t("projects.campingTitle"),
+      description: t("projects.campingDesc"),
       image: "/camping-website-interface-with-nature-background-a.jpg",
-      technologies: ["HTML", "CSS", "PHP", "SQL"],
-      features: ["Interactive Maps", "Reservation System", "User Reviews", "Payment Processing"],
+      technologies: t("projects.campingTechStack").split(/,|،/),
+      techLabel: t("projects.campingTech"),
+      featuresLabel: t("projects.campingFeatures"),
+      features: [
+        t("projects.campingFeature1"),
+        t("projects.campingFeature2"),
+        t("projects.campingFeature3"),
+        t("projects.campingFeature4")
+      ],
       github: "https://github.com/DjamelRebiai/project_djm_aber.git",
       live: null,
     },
     {
-      title: "Simple Paint Application",
-      description:
-        "Java-based paint application with drawing tools, color palette, and file operations for creating digital artwork.",
+      title: t("projects.paintTitle"),
+      description: t("projects.paintDesc"),
       image: "/digital-paint-application-interface-with-drawing-t.jpg",
       technologies: ["Java"],
-      features: ["Drawing Tools", "Color Palette", "File Operations", "Layer Support"],
+      techLabel: t("projects.paintTech"),
+      featuresLabel: t("projects.paintFeatures"),
+      features: [
+        t("projects.paintFeature1"),
+        t("projects.paintFeature2"),
+        t("projects.paintFeature3"),
+        t("projects.paintFeature4")
+      ],
       github: "https://github.com/DjamelRebiai/Simple_Paint_Application_java.git",
       live: null,
     },
     {
-      title: "Anti-Cheating University Exam App",
-      description:
-        "Mobile application for monitoring and preventing cheating during online university examinations with real-time surveillance.",
+      title: t("projects.examTitle"),
+      description: t("projects.examDesc"),
       image: "/secure-exam-monitoring-interface-with-webcam-feed-.png",
       technologies: ["Java"],
-      features: ["Real-time Monitoring", "Face Detection", "Screen Recording", "Secure Environment"],
+      techLabel: t("projects.examTech"),
+      featuresLabel: t("projects.examFeatures"),
+      features: [
+        t("projects.examFeature1"),
+        t("projects.examFeature2"),
+        t("projects.examFeature3"),
+        t("projects.examFeature4")
+      ],
       github: "https://github.com/DjamelRebiai/Anti-Cheating_University_Exam_AppMOBILE_java.git",
       live: null,
     },
     {
-      title: "Rare Medicine Management System",
-      description:
-        "Healthcare management system for tracking and managing rare medicines with inventory control and patient records.",
+      title: t("projects.medicineTitle"),
+      description: t("projects.medicineDesc"),
       image: "/medical-management-system-interface-with-medicine-.png",
-      technologies: ["HTML", "CSS", "PHP", "SQL"],
-      features: ["Inventory Management", "Patient Records", "Medicine Tracking", "Report Generation"],
+      technologies: t("projects.campingTechStack").split(/,|،/),
+      techLabel: t("projects.medicineTech"),
+      featuresLabel: t("projects.medicineFeatures"),
+      features: [
+        t("projects.medicineFeature1"),
+        t("projects.medicineFeature2"),
+        t("projects.medicineFeature3"),
+        t("projects.medicineFeature4")
+      ],
       github: "https://github.com/DjamelRebiai/Rare_Medicine_Management_System.git",
       live: null,
     },
@@ -104,18 +140,18 @@ export function ProjectsSection() {
 
                   <div className="space-y-3">
                     <div>
-                      <h4 className="text-sm font-semibold mb-2">Technologies:</h4>
+                      <h4 className="text-sm font-semibold mb-2">{project.techLabel}</h4>
                       <div className="flex flex-wrap gap-1">
                         {project.technologies.map((tech, techIndex) => (
                           <Badge key={techIndex} variant="secondary" className="text-xs">
-                            {tech}
+                            {tech.trim()}
                           </Badge>
                         ))}
                       </div>
                     </div>
 
                     <div>
-                      <h4 className="text-sm font-semibold mb-2">Key Features:</h4>
+                      <h4 className="text-sm font-semibold mb-2">{project.featuresLabel}</h4>
                       <ul className="text-xs text-muted-foreground space-y-1">
                         {project.features.map((feature, featureIndex) => (
                           <li key={featureIndex} className="flex items-center space-x-2">
@@ -146,7 +182,7 @@ export function ProjectsSection() {
                     )}
                     {!project.github && (
                       <Badge variant="secondary" className="text-xs">
-                        Private Repository
+                        {t("projects.privateRepo")}
                       </Badge>
                     )}
                   </div>

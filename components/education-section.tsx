@@ -11,19 +11,19 @@ export function EducationSection() {
     {
       title: t("education.masters"),
       description: t("education.mastersDesc"),
-      period: "2023 - Present",
+      period: "2025 - Present",
       status: "In Progress",
     },
     {
       title: t("education.bachelors"),
       description: t("education.bachelorsDesc"),
-      period: "2019 - 2023",
+      period: "2022 - 2025",
       status: "Completed",
     },
     {
       title: t("education.baccalaureate"),
       description: t("education.baccalaureateDesc"),
-      period: "2018 - 2019",
+      period: "2019 - 2022",
       status: "Completed",
     },
   ]

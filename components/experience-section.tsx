@@ -23,19 +23,19 @@ export function ExperienceSection() {
     {
       title: t("experience.diagnostics"),
       description: t("experience.diagnosticsDesc"),
-      period: "2022",
+      period: "2023",
       type: "Internship",
     },
     {
       title: t("experience.arduino"),
       description: t("experience.arduinoDesc"),
-      period: "2021",
+      period: "2022",
       type: "Training",
     },
     {
       title: t("experience.english"),
       description: t("experience.englishDesc"),
-      period: "2020 - 2021",
+      period: "2022",
       type: "Course",
     },
   ]
